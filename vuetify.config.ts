@@ -5,6 +5,7 @@ const lightTheme = {
   dark: false,
   colors: {
     darkPink: "#E20054",
+    background: "#EDF2FE",
   },
 };
 

@@ -48,7 +48,10 @@
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
 }
-
+.container {
+  border-bottom-right-radius: 32px !important;
+  border-bottom-left-radius: 32px !important;
+}
 .main-header-call-btn {
   padding: 0 26px !important;
 }
