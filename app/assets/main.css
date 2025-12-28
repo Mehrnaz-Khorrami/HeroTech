@@ -1,0 +1,19 @@
+.border-16 {
+    border-radius: 16px !important;
+}
+
+.fs-13{
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.font-weight-700 {
+    font-weight: 700 !important;
+}
+
+.dark-blue{
+    color: #0A2A51;
+}
