@@ -6,7 +6,7 @@
         fluid
         :class="mobile ? 'main-content-mobile' : 'main-content-desktop'"
       >
-        
+        <NuxtPage />
       </v-container>
     </v-main>
   </v-app>
