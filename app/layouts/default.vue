@@ -1,0 +1,15 @@
+<template>
+  <v-app>
+    <LayoutsMainHeader />
+    <v-main :style="mobile ? mainContentStyle : ''" class="pb-0">
+      <v-container
+        fluid
+        :class="mobile ? 'main-content-mobile' : 'main-content-desktop'"
+      >
+        
+      </v-container>
+    </v-main>
+  </v-app>
+</template>
+<script setup></script>
+<style lang="css"></style>
