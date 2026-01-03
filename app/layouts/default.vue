@@ -9,6 +9,7 @@
         <NuxtPage />
       </v-container>
     </v-main>
+    <LayoutsMainFooter />
   </v-app>
 </template>
 <script setup></script>
