@@ -50,32 +50,6 @@
           {{ data.rating.count }}
         </div>
       </div>
-      <!-- <div class="specs-wrapper d-flex">
-        <div class="spec-value">
-          <p>توضیحات</p>
-        </div>
-        <div class="spec-label">
-          {{ data.description }}
-        </div>
-      </div> -->
-      <!-- <div class="d-flex align-center">
-        <div>
-
-          <div class="description-title">قیمت</div>
-          <div class="description-title my-3">توضیحات</div>
-          <div class="description-title">دسته‌بندی</div>
-          <div class="description-title my-3">رتبه</div>
-          <div class="description-title">تعداد</div>
-        </div>
-        <div>
-
-            <div class="description-text">{{data.price}}</div>
-            <div class="description-text my-3">{{data.description}}</div>
-            <div class="description-text">{{data.category}}</div>
-            <div class="description-text my-3">{{data.rating.rate}}</div>
-            <div class="description-text">{{data.rating.count}}</div>
-        </div>
-      </div> -->
     </div>
   </div>
 </template>
@@ -118,24 +92,4 @@ const { data, pending } = await useAsyncData("single-product", () =>
   color: #30445b;
   padding: 16px;
 }
-
-/* .spec-label {
-  min-width: 140px;
-  background: #f5f7fa;
-  border-radius: 16px;
-  padding: 16px;
-  text-align: center;
-  font-weight: 500;
-  color: #6b7280;
-  margin-right: 12px;
-}
-
-.spec-value {
-  flex: 1;
-  background: #f5f7fa;
-  border-radius: 16px;
-  padding: 16px 20px;
-  color: #374151;
-  line-height: 1.9;
-} */
 </style>
