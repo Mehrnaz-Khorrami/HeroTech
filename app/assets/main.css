@@ -1,3 +1,14 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #EDF2FE;
+    margin: 0;
+    padding: 0;
+}
+
 .border-16 {
     border-radius: 16px !important;
 }
@@ -10,6 +21,14 @@
     font-size: 14px;
 }
 
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
 .font-weight-700 {
     font-weight: 700 !important;
 }
@@ -20,4 +39,8 @@
 
 .dark-pink {
     color: #E20054;
+}
+
+a {
+    text-decoration: none;
 }
