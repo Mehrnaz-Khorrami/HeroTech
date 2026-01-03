@@ -20,9 +20,11 @@ body {
 .fs-14 {
     font-size: 14px;
 }
+
 .fs-18 {
     font-size: 18px;
 }
+
 .fs-20 {
     font-size: 20px;
 }
@@ -37,4 +39,8 @@ body {
 
 .dark-pink {
     color: #E20054;
+}
+
+a {
+    text-decoration: none;
 }
