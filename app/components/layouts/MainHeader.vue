@@ -1,13 +1,37 @@
 <template>
-  <div>
+  <div class="main-header-container">
     <client-only>
       <LoginDialog v-model="openLoginDialog" />
     </client-only>
     <v-app-bar scroll-behavior="elevate" class="container" height="120">
-      <div class="d-flex justify-space-between w-100">
+      <div class="main-header-mobile-content">
+        <v-btn
+          variant="outlined"
+          height="40"
+          width="40"
+          icon
+          color="#E20054"
+          class="hamburger-menu-btn"
+        >
+          <v-icon size="16">mdi-menu</v-icon>
+        </v-btn>
+        <v-btn
+          variant="outlined"
+          height="40"
+          width="40"
+          icon
+          color="#E20054"
+          class="hamburger-menu-btn"
+        >
+          <v-img src="/icons/phonePinkIcon.svg" width="16" height="16" />
+        </v-btn>
+      </div>
+      <div
+        class="d-flex justify-space-between w-100 main-header-content-desktop"
+      >
         <div>
-          <v-btn>
-            <v-img src="/icons/categoryIcon.png" width="16" height="16" />
+          <v-btn to="/products">
+            <v-img src="/icons/categoryIcon.svg" width="16" height="16" />
             <span class="mr-2 dark-blue fs-13">لیست محصولات</span>
           </v-btn>
           <v-btn>
@@ -47,6 +71,7 @@
   box-shadow: 0px 2px 2px 0px #00000014;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
+  padding: 0 164px;
 }
 .container {
   border-bottom-right-radius: 32px !important;
@@ -54,5 +79,34 @@
 }
 .main-header-call-btn {
   padding: 0 26px !important;
+}
+.main-header-mobile-content {
+  display: none;
+}
+
+@media (min-width: 360px) and (max-width: 1028px) {
+  .main-header-mobile-content {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+  }
+  .main-header-content-desktop {
+    display: none !important;
+  }
+  .container .v-toolbar__content {
+    height: 72px !important;
+    border-bottom-right-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+  }
+  .container {
+    border-bottom-right-radius: 16px !important;
+    border-bottom-left-radius: 16px !important;
+  }
+  .hamburger-menu-btn {
+    border-radius: 8px !important;
+  }
 }
 </style>

@@ -13,6 +13,9 @@ body {
     border-radius: 16px !important;
 }
 
+.fs-12 {
+    font-size: 12px;
+}
 .fs-13 {
     font-size: 13px;
 }
@@ -33,12 +36,24 @@ body {
     font-weight: 700 !important;
 }
 
+.font-weight-500 {
+    font-weight: 500 !important;
+}
+
 .dark-blue {
     color: #0A2A51;
 }
 
 .dark-pink {
     color: #E20054;
+}
+
+.gray-700 {
+    color: #445A74;
+}
+
+.gray-500 {
+    color: #647E9A;
 }
 
 a {
