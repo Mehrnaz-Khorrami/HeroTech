@@ -4,7 +4,7 @@
     <v-main :style="mobile ? mainContentStyle : ''" class="pb-0">
       <v-container
         fluid
-        :class="mobile ? 'main-content-mobile' : 'main-content-desktop'"
+        class="main-content-desktop"
       >
         <NuxtPage />
       </v-container>
@@ -13,4 +13,8 @@
   </v-app>
 </template>
 <script setup></script>
-<style lang="css"></style>
+<style lang="css">
+  .main-content-desktop{
+    padding: 0 164px;
+  }
+</style>
