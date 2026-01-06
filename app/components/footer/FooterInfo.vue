@@ -1,6 +1,6 @@
 <template>
   <div class="footer-info-container">
-    <div class="d-flex w-100 justify-space-between align-center">
+    <div class="footer-info-content-desktop">
       <div></div>
       <div class="text-center align-center">
         <div class="footer-info-text">
@@ -54,7 +54,7 @@
           </div>
         </div>
       </div>
-      <div class="d-flex">
+      <div class="d-flex footer-info-certificate-container-mobile">
         <div class="footer-info-certificate-container ml-4">
           <v-img
             src="/icons/samandehiIcon.svg"
@@ -89,6 +89,14 @@
   justify-content: end;
   padding: 0 80px;
 }
+
+.footer-info-content-desktop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
 .footer-info-text {
   font-weight: 700;
   font-size: 13px;
@@ -96,10 +104,12 @@
   letter-spacing: 0%;
   color: #445a74;
 }
+
 .footer-info-social-media-icon {
   background-color: #f180a9;
   border-radius: 50%;
 }
+
 .footer-info-social-media-icon:hover {
   background-color: #e20054;
 }
@@ -119,5 +129,20 @@
   height: 24px;
   background-color: #f180a9;
   border-radius: 50%;
+}
+
+@media (min-width: 360px) and (max-width: 1028px) {
+  .footer-info-content-desktop {
+    display: block;
+  }
+  .footer-info-container {
+    height: 243px;
+    padding-top: 29px;
+    padding: 29px 20px;
+  }
+  .footer-info-certificate-container-mobile {
+    justify-content: center;
+    margin-top: 16px;
+  }
 }
 </style>
