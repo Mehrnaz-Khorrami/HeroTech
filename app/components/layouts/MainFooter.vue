@@ -1,6 +1,7 @@
 <template>
   <div class="main-footer-container">
     <FooterLinks />
+    <FooterInfo />
   </div>
 </template>
 <script setup></script>
