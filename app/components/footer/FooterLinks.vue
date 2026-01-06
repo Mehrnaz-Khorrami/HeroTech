@@ -45,21 +45,36 @@
       <div class="footer-links-title">شبکه‌های اجتماعی</div>
       <div class="footer-social-media-link d-flex">
         <div class="d-inline-block">
-          <v-img src="/icons/telegramIcon.svg" width="24" height="24" />
+          <v-img
+            src="/icons/telegramIcon.svg"
+            width="24"
+            height="24"
+            class="social-media-icon"
+          />
         </div>
         <NuxtLink to="/">تلگرام</NuxtLink>
       </div>
 
       <div class="footer-social-media-link my-3 d-flex">
         <div class="d-inline-block">
-          <v-img src="/icons/instagramIcon.svg" width="24" height="24" />
+          <v-img
+            src="/icons/instagramIcon.svg"
+            width="24"
+            height="24"
+            class="social-media-icon"
+          />
         </div>
         <NuxtLink to="/">اینستاگرام</NuxtLink>
       </div>
 
       <div class="footer-social-media-link d-flex">
         <div class="d-inline-block">
-          <v-img src="/icons/linkedinIcon.svg" width="24" height="24" />
+          <v-img
+            src="/icons/linkedinIcon.svg"
+            width="24"
+            height="24"
+            class="social-media-icon"
+          />
         </div>
         <NuxtLink to="/">لینکدین</NuxtLink>
       </div>
@@ -107,5 +122,10 @@
   color: #30445b;
   margin-right: 12px;
   margin-bottom: 16px;
+}
+
+.social-media-icon {
+  background-color: #6783a0;
+  border-radius: 50%;
 }
 </style>
