@@ -1,7 +1,7 @@
 <template>
   <div class="footer-links-container">
     <div class="d-flex flex-column justify-center h-100 pb-5">
-      <v-img width="232" />
+      <v-img width="232" class="work-time-text" />
       <div class="work-time-text">
         هفت روز هفته از ۸ صبح تا ۱۲ شب پاسخگو هستیم
       </div>
@@ -26,7 +26,7 @@
       </div>
     </div>
 
-    <div>
+    <div class="site-guid-container">
       <div class="footer-links-title">راهنمای سایت</div>
       <div class="footer-link">
         <NuxtLink to="/">قوانین و مقررات</NuxtLink>
@@ -127,5 +127,22 @@
 .social-media-icon {
   background-color: #6783a0;
   border-radius: 50%;
+}
+
+@media (min-width: 360px) and (max-width: 1028px) {
+  .footer-links-container {
+    height: 603px;
+    padding: 100px 36px 250px 36px;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: start;
+    align-content: start;
+  }
+  .work-time-text {
+    display: none;
+  }
+  .site-guid-container {
+    margin-right: 65px;
+  }
 }
 </style>
