@@ -17,21 +17,21 @@
             />
           </div>
 
-          <div class="d-inline-block mx-4">
+          <div class="d-inline-block footer-info-youtube-icon mx-4">
             <v-img
               src="/icons/youtubeIcon.svg"
-              width="24"
+              width="14"
               height="24"
-              class="footer-info-social-media-icon"
+              class="mx-auto"
             />
           </div>
 
-          <div class="d-inline-block">
+          <div class="d-inline-block footer-info-youtube-icon">
             <v-img
               src="/icons/twitterIcon.svg"
-              width="24"
+              width="14"
               height="24"
-              class="footer-info-social-media-icon"
+              class="mx-auto"
             />
           </div>
 
@@ -110,5 +110,14 @@
   background-color: white;
   border-radius: 6px;
   align-content: center;
+}
+.footer-info-youtube-icon:hover {
+  background-color: #e20054;
+}
+.footer-info-youtube-icon {
+  width: 24px;
+  height: 24px;
+  background-color: #f180a9;
+  border-radius: 50%;
 }
 </style>
