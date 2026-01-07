@@ -42,28 +42,28 @@
         </template>
         <template #text>
           <v-radio-group>
-            <v-radio value="one" size="small" color="dark-pink">
+            <v-radio value="one" size="small" color="#E20054">
               <template #label>
                 <span class="gray-500 font-weight-500 fs-12"
                   >تعداد: کم به زیاد</span
                 >
               </template>
             </v-radio>
-            <v-radio value="two" color="dark-pink">
+            <v-radio value="two" color="#E20054">
               <template #label>
                 <span class="gray-500 font-weight-500 fs-12"
                   >تعداد: زیاد به کم</span
                 >
               </template>
             </v-radio>
-            <v-radio value="three" color="dark-pink">
+            <v-radio value="three" color="#E20054">
               <template #label>
                 <span class="gray-500 font-weight-500 fs-12"
                   >رتبه: زیاد به کم</span
                 >
               </template>
             </v-radio>
-            <v-radio value="four" color="dark-pink">
+            <v-radio value="four" color="#E20054">
               <template #label>
                 <span class="gray-500 font-weight-500 fs-12"
                   >رتبه: کم به زیاد</span
