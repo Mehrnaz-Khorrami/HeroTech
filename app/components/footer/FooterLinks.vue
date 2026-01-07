@@ -91,7 +91,7 @@
   display: flex;
   justify-content: space-around;
   align-items: start;
-  padding: 40px 200px;
+  padding: 40px 164px;
 }
 
 .work-time-text {
@@ -143,6 +143,12 @@
   }
   .site-guid-container {
     margin-right: 65px;
+  }
+}
+
+@media (min-width: 1028px) and (max-width: 1440px) {
+  .footer-links-container {
+    padding: 40px 80px;
   }
 }
 </style>

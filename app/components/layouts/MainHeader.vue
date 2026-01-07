@@ -3,7 +3,7 @@
     <client-only>
       <LoginDialog v-model="openLoginDialog" />
     </client-only>
-    <v-app-bar scroll-behavior="elevate" class="container" height="120">
+    <v-app-bar scroll-behavior="elevate" class="container" >
       <div class="main-header-mobile-content">
         <v-btn
           variant="outlined"
@@ -71,11 +71,15 @@
   box-shadow: 0px 2px 2px 0px #00000014;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
-  padding: 0 164px;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+  padding: 0 164px !important;
+  height: 120px !important;
 }
 .container {
   border-bottom-right-radius: 32px !important;
   border-bottom-left-radius: 32px !important;
+  
 }
 .main-header-call-btn {
   padding: 0 26px !important;
@@ -84,29 +88,35 @@
   display: none;
 }
 
-@media (min-width: 360px) and (max-width: 1028px) {
-  .main-header-mobile-content {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: 100% !important;
+  @media (min-width: 360px) and (max-width: 1028px) {
+    .main-header-mobile-content {
+      display: flex !important;
+      justify-content: space-between !important;
+      align-items: center !important;
+      width: 100% !important;
+    }
+    .main-header-content-desktop {
+      display: none !important;
+    }
+    .container .v-toolbar__content {
+      height: 72px !important;
+      border-bottom-right-radius: 16px !important;
+      border-bottom-left-radius: 16px !important;
+      width: 100% !important;
+      padding: 0 16px !important;
+    }
+    .container {
+      border-bottom-right-radius: 16px !important;
+      border-bottom-left-radius: 16px !important;
+    }
+    .hamburger-menu-btn {
+      border-radius: 8px !important;
+    }
   }
-  .main-header-content-desktop {
-    display: none !important;
+
+  @media (min-width: 1028px) and (max-width: 1440px) {
+    .container .v-toolbar__content {
+      padding: 0 80px !important;
+    }
   }
-  .container .v-toolbar__content {
-    height: 72px !important;
-    border-bottom-right-radius: 16px !important;
-    border-bottom-left-radius: 16px !important;
-    width: 100% !important;
-    padding: 0 16px !important;
-  }
-  .container {
-    border-bottom-right-radius: 16px !important;
-    border-bottom-left-radius: 16px !important;
-  }
-  .hamburger-menu-btn {
-    border-radius: 8px !important;
-  }
-}
 </style>

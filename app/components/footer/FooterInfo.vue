@@ -87,7 +87,7 @@
   display: flex;
   align-content: center;
   justify-content: end;
-  padding: 0 80px;
+  padding: 0 164px;
 }
 
 .footer-info-content-desktop {
@@ -143,6 +143,12 @@
   .footer-info-certificate-container-mobile {
     justify-content: center;
     margin-top: 16px;
+  }
+}
+
+@media (min-width: 1028px) and (max-width: 1440px) {
+  .footer-info-container {
+    padding: 0 80px;
   }
 }
 </style>
