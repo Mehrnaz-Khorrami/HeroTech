@@ -5,6 +5,8 @@
     >
       <div class="fs-13 font-weight-500 mb-4 gray-700">فیلتر و جستجو</div>
       <v-text-field
+        :model-value="searchQuery"
+        @update:model-value="searchQuery = $event"
         rounded="lg"
         variant="outlined"
         density="compact"
@@ -12,6 +14,8 @@
         clearable
         hide-details
         clear-icon="mdi-close"
+        @keyup.enter="handleSearch"
+        @click:clear="handleClear"
       >
         <template #prepend-inner>
           <v-icon size="20">mdi-magnify</v-icon>
@@ -23,6 +27,7 @@
         color="#E20054"
         block
         class="fs-12 font-weight-700 search-button"
+        @click="handleSearch"
         >جستجو</v-btn
       >
     </div>
@@ -121,15 +126,40 @@
 </template>
 <script setup>
 const checked = ref([]);
+
+const props = defineProps({
+  searchQuery: {
+    type: String,
+    default: "",
+  },
+});
+
+const emit = defineEmits(["search", "update:searchQuery"]);
+
+const searchQuery = computed({
+  get: () => props.searchQuery,
+  set: (value) => emit("update:searchQuery", value),
+});
+
 const isChecked = (value) => {
   return checked.value.includes(value);
 };
+
 const toggleCheckbox = (value) => {
   if (checked.value.includes(value)) {
     checked.value = checked.value.filter((item) => item !== value);
   } else {
     checked.value.push(value);
   }
+};
+
+const handleSearch = () => {
+  emit("search", props.searchQuery);
+};
+
+const handleClear = () => {
+  emit("update:searchQuery", "");
+  emit("search", "");
 };
 </script>
 <style lang="css">
