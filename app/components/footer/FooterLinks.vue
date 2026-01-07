@@ -1,7 +1,7 @@
 <template>
   <div class="footer-links-container">
     <div class="d-flex flex-column justify-center h-100 pb-5">
-      <v-img width="232" class="work-time-text" />
+      <v-img width="232" class="work-time-text gray-700" />
       <div class="work-time-text">
         هفت روز هفته از ۸ صبح تا ۱۲ شب پاسخگو هستیم
       </div>
@@ -91,11 +91,10 @@
   display: flex;
   justify-content: space-around;
   align-items: start;
-  padding: 40px 200px;
+  padding: 40px 164px;
 }
 
 .work-time-text {
-  color: #445a74;
   font-size: 13px;
   font-weight: 500;
 }
@@ -143,6 +142,12 @@
   }
   .site-guid-container {
     margin-right: 65px;
+  }
+}
+
+@media (min-width: 1028px) and (max-width: 1440px) {
+  .footer-links-container {
+    padding: 40px 80px;
   }
 }
 </style>

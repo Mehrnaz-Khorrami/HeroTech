@@ -1,20 +1,23 @@
 <template>
   <div>
-    <div class="single-product-card-container mb-6">
+    <ProductsBreadCrumb :category-name="data.category" />
+    <div
+      class="single-product-card-container product-image-container-mobile mb-6"
+    >
       <div class="fs-18 font-weight-700 pt-8 mb-6">{{ data.title }}</div>
       <v-img :src="data.image" width="100%" height="310" class="ma-2" />
     </div>
 
     <div class="single-product-card-container">
       <div class="pt-6 mb-4 fs-20 font-weight-700">مشخصات فنی</div>
-      <div class="d-flex">
+      <div class="d-flex spec-row">
         <div class="description-title">قیمت</div>
-        <div class="description-text">
+        <div class="description-text gray-800">
           {{ data.price }}
         </div>
       </div>
 
-      <div class="d-flex my-3">
+      <div class="d-flex my-3 spec-row">
         <div class="description-title">توضیحات</div>
         <div class="description-text">
           <ul class="mr-4">
@@ -30,21 +33,21 @@
         </div>
       </div>
 
-      <div class="d-flex">
+      <div class="d-flex spec-row">
         <div class="description-title">دسته‌بندی</div>
         <div class="description-text">
           {{ data.category }}
         </div>
       </div>
 
-      <div class="d-flex my-3">
+      <div class="d-flex my-3 spec-row">
         <div class="description-title">رتبه</div>
         <div class="description-text">
           {{ data.rating.rate }}
         </div>
       </div>
 
-      <div class="d-flex">
+      <div class="d-flex spec-row">
         <div class="description-title">تعداد</div>
         <div class="description-text">
           {{ data.rating.count }}
@@ -89,7 +92,24 @@ const { data, pending } = await useAsyncData("single-product", () =>
   width: 100%;
   font-weight: 700;
   font-size: 13px;
-  color: #30445b;
   padding: 16px;
+}
+
+@media (min-width: 360px) and (max-width: 1028px) {
+  .product-image-container-mobile {
+    padding: 0 16px 16px 16px;
+  }
+  .spec-row {
+    flex-direction: column;
+  }
+  .description-title {
+    width: 100%;
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+  .description-text {
+    border-radius: 16px;
+    margin-right: 0;
+  }
 }
 </style>

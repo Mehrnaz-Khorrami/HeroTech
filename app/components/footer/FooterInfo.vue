@@ -3,7 +3,7 @@
     <div class="footer-info-content-desktop">
       <div></div>
       <div class="text-center align-center">
-        <div class="footer-info-text">
+        <div class="footer-info-text gray-700">
           تمامی حقوق مادی و معنوی این وبسایت متعلق به می‌باشد و هر گونه <br />
           کپی برداری پیگرد قانونی دارد.
         </div>
@@ -87,7 +87,7 @@
   display: flex;
   align-content: center;
   justify-content: end;
-  padding: 0 80px;
+  padding: 0 164px;
 }
 
 .footer-info-content-desktop {
@@ -97,12 +97,11 @@
   width: 100%;
 }
 
-.footer-info-text {
+.footer-info-text gray-700 {
   font-weight: 700;
   font-size: 13px;
   line-height: 24px;
   letter-spacing: 0%;
-  color: #445a74;
 }
 
 .footer-info-social-media-icon {
@@ -143,6 +142,12 @@
   .footer-info-certificate-container-mobile {
     justify-content: center;
     margin-top: 16px;
+  }
+}
+
+@media (min-width: 1028px) and (max-width: 1440px) {
+  .footer-info-container {
+    padding: 0 80px;
   }
 }
 </style>

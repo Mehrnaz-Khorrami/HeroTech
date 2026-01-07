@@ -16,6 +16,7 @@ body {
 .fs-12 {
     font-size: 12px;
 }
+
 .fs-13 {
     font-size: 13px;
 }
@@ -41,19 +42,27 @@ body {
 }
 
 .dark-blue {
-    color: #0A2A51;
+    color: #0A2A51 !important;
 }
 
 .dark-pink {
-    color: #E20054;
+    color: #E20054 !important;
 }
 
 .gray-700 {
-    color: #445A74;
+    color: #445A74 !important;
 }
 
 .gray-500 {
-    color: #647E9A;
+    color: #647E9A !important;
+}
+
+.gray-800 {
+    color: #30445b !important;
+}
+
+.gray-400 {
+    color: #6783a0 !important;
 }
 
 a {
