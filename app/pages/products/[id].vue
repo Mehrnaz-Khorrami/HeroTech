@@ -1,5 +1,6 @@
 <template>
   <div>
+    <ProductsBreadCrumb :category-name="data.category" />
     <div
       class="single-product-card-container product-image-container-mobile mb-6"
     >
