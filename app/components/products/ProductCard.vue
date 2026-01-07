@@ -1,6 +1,6 @@
 <template>
   <div class="product-card-container">
-    <v-img :src="product.image" width="247" height="170" class="ma-2" />
+    <v-img :src="product.image" class="ma-2 product-image" />
     <div class="px-4">
       <div class="fs-14 font-weight-700 dark-blue my-4 product-title">
         {{ product.title }}
@@ -46,5 +46,19 @@ defineProps({
   -webkit-box-orient: vertical;
   line-height: 24px;
   word-wrap: break-word;
+}
+.product-image {
+  width: 247px;
+  height: 170px;
+}
+@media (min-width: 1028px) and (max-width: 1440px) {
+  .product-card-container {
+    width: 182px;
+    height: 286px;
+  }
+  .product-image {
+    width: 166px;
+    height: 170px;
+  }
 }
 </style>
