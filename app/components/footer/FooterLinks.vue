@@ -1,7 +1,7 @@
 <template>
   <div class="footer-links-container">
     <div class="d-flex flex-column justify-center h-100 pb-5">
-      <v-img width="232" class="work-time-text" />
+      <v-img width="232" class="work-time-text gray-700" />
       <div class="work-time-text">
         هفت روز هفته از ۸ صبح تا ۱۲ شب پاسخگو هستیم
       </div>
@@ -95,7 +95,6 @@
 }
 
 .work-time-text {
-  color: #445a74;
   font-size: 13px;
   font-weight: 500;
 }

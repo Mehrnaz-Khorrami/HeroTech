@@ -3,8 +3,11 @@
     <div class="font-weight-500 fs-14 mb-2">فیلترهای اعمال شده</div>
     <div class="d-flex align-center flex-wrap gap-2">
       <div v-if="searchQuery" class="filter-chip">
-        <span class="filter-chip-text">{{ searchQuery }}</span>
-        <v-icon size="16" class="filter-chip-close" @click="handleClearSearch"
+        <span class="filter-chip-text dark-blue">{{ searchQuery }}</span>
+        <v-icon
+          size="16"
+          class="filter-chip-close gray-500"
+          @click="handleClearSearch"
           >mdi-close</v-icon
         >
       </div>
@@ -50,12 +53,10 @@ const handleClearSearch = () => {
 .filter-chip-text {
   font-size: 12px;
   font-weight: 500;
-  color: #0a2a51;
 }
 
 .filter-chip-close {
   cursor: pointer;
-  color: #647e9a;
   transition: color 0.2s;
 }
 

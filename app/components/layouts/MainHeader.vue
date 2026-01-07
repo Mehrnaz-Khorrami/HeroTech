@@ -10,7 +10,7 @@
           height="40"
           width="40"
           icon
-          color="#E20054"
+          color="dark-pink"
           class="hamburger-menu-btn"
         >
           <v-icon size="16">mdi-menu</v-icon>
@@ -20,7 +20,7 @@
           height="40"
           width="40"
           icon
-          color="#E20054"
+          color="dark-pink"
           class="hamburger-menu-btn"
         >
           <v-img src="/icons/phonePinkIcon.svg" width="16" height="16" />
@@ -71,7 +71,6 @@
   box-shadow: 0px 2px 2px 0px #00000014;
   border-bottom-right-radius: 32px;
   border-bottom-left-radius: 32px;
-  /* max-width: 1440px; */
   margin: 0 auto;
   padding: 0 164px !important;
   height: 120px !important;

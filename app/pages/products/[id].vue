@@ -12,7 +12,7 @@
       <div class="pt-6 mb-4 fs-20 font-weight-700">مشخصات فنی</div>
       <div class="d-flex spec-row">
         <div class="description-title">قیمت</div>
-        <div class="description-text">
+        <div class="description-text gray-800">
           {{ data.price }}
         </div>
       </div>
@@ -92,7 +92,6 @@ const { data, pending } = await useAsyncData("single-product", () =>
   width: 100%;
   font-weight: 700;
   font-size: 13px;
-  color: #30445b;
   padding: 16px;
 }
 
